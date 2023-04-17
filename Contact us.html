@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #ff7200;
+  color: white;
+  font-size: 30px;
+}
+
+.content {padding:20px;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #999997;
+  color: rgb(82, 79, 79);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+}
+
+.container {
+    width: 700px;
+    height: 540px;
+    background: #ff7200;
+    position: absolute;
+    top: 450px;
+    left: 320px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.container h3{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #101010;
+    font-size: 22px;
+    background-color: #cbcccd;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Thank you dear customers</h1>
+  <p>We are soo greatful and we gonna take care of your query <br>
+we will happy to serve you again</p>
+</div>
+
+<div class="content">
+
+<div class="container">
+    <h3>Write us something</h3><br>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lEmail ID">Email ID</label>
+    <input type="text" id="lemail ID" name="email ID" placeholder="Your email ID..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">INDIA</option>
+      <option value="china">CIHNA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
